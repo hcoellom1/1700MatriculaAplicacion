@@ -12,7 +12,7 @@
     <br>
     <a href="{{ route('alumno.crear') }}" class="btn btn-success">Agregar Nuevo</a>
     <br>
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Codigo</th>

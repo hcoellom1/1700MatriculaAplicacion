@@ -22,6 +22,9 @@ Route::get('/alumnos', [AlumnoController::class, 'inicio'])->name('alumno.princi
 
 Route::get('/alumnos/crear', [AlumnoController::class, 'crear'])->name('alumno.crear');
 
+Route::post('/alumnos/guardar', [AlumnoController::class, 'guardar'])->name('alumno.store');
+
 Route::get('/alumnos/editar/{codigo}',[AlumnoController::class, 'editar'])->name('alumno.editar');
 
 Route::get('/alumnos/eliminar/{codigo}',[AlumnoController::class, 'eliminar'])->name('alumno.eliminar');
+
