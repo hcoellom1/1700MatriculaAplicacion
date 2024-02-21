@@ -28,3 +28,6 @@ Route::get('/alumnos/editar/{codigo}',[AlumnoController::class, 'editar'])->name
 
 Route::get('/alumnos/eliminar/{codigo}',[AlumnoController::class, 'eliminar'])->name('alumno.eliminar');
 
+Route::put('/alumnos/actualizar/{id}', [AlumnoController::class, 'actualizar'] )->name('alumno.actualizar');
+
+Route::get('/alumnos/destroy/{codigo}',[AlumnoController::class, 'destroy'])->name('alumno.destroy');

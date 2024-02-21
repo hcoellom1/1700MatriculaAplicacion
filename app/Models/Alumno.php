@@ -9,5 +9,6 @@ class Alumno extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'codigoAlumno';
     public $timestamps = false;
 }
