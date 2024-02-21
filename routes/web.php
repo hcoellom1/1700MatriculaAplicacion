@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AlumnoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/alumnos', [AlumnoController::class, 'inicio'])->name('alumno.principal');
+
+Route::get('/alumnos/crear', [AlumnoController::class, 'crear'])->name('alumno.crear');
+
+Route::get('/alumnos/editar/{codigo}',[AlumnoController::class, 'editar'])->name('alumno.editar');
+
+Route::get('/alumnos/eliminar/{codigo}',[AlumnoController::class, 'eliminar'])->name('alumno.eliminar');
